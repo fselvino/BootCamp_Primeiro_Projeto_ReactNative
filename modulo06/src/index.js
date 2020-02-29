@@ -7,14 +7,9 @@
  */
 
 import React, { Component } from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-} from 'react-native';
+import { StyleSheet, View, Text } from 'react-native';
+
+import './config/ReactotronConfig';
 
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 
@@ -22,12 +17,12 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.body}>
-        <Text style={styles.nome}>Fernando Selvino</Text>
+        <Text style={styles.nome}>Fernando Selvino de </Text>
       </View>
     );
   }
 }
-
+console.tron.log('Vamos debugar');
 const styles = StyleSheet.create({
   body: {
     backgroundColor: Colors.white,
@@ -37,7 +32,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#7159c1',
   },
   nome: {
-    fontSize: 45,
+    fontSize: 26,
     color: 'black',
     borderBottomLeftRadius: 50,
   },
